@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     #Custom Apps
     'core',
     'userauths',
-    'api'
+    'core'
 
 ]
 
