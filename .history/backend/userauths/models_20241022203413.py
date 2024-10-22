@@ -34,12 +34,6 @@ class Profile(models.Model):
       return str(self.full_name):
     else:
       return str(self.user.full_name)
-    
-
-  def save(self, *arg, **kwargs):
-    if self.full_name == "" or self.full_name == None:
-      self.full_name == self.user.username
-      super(Profile, self).save(*arg, **kwargs)
 
 
 
